@@ -80,26 +80,21 @@ marquee{
 }
 
 .images .tile .image{
-        border-radius: 15px;
         width: 99%;
         height: 100%;
         aspect-ratio: 1/1;
         background-size: contain;
         background-repeat: no-repeat;
         display:inline-block;
-        object-fit:contain;
-        content: url(assets/discord.png);
+
 }
 .images .tile img{
-        border-radius: 150px;
+        border-radius: 15px;
         white-space-collapse: nowrap;
         text-decoration: none;
         font-size: larger;
         font-weight: 900;
-        -webkit-border-radius: 150px;
-        -moz-border-radius: 150px;
-        -ms-border-radius: 150px;
-        -o-border-radius: 150px;
+
 }
 
 .bottom{
@@ -140,19 +135,20 @@ marquee{
                 width: 100%;
         }
         .images{
-                width: 100%;
+                width: 95%;
                 margin: 2.5%;
                 margin-top: 150px;
         }
         .images .tile{
-                margin: 2.5%;
-                width: 90.5%;
+                margin: 2.8%;
+                width: 41.5%;
         }
         .large img{
                 margin-left: 2.5%;
                 margin-right: 2.5%;
                 max-width: 90%;
                 max-height: unset;
+                height: unset;
                 display: block;
         }
 }

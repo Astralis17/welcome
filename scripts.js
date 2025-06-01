@@ -22,7 +22,7 @@ function setAndShow(image){
                         console.log(largeImage.offsetWidth)
                 }
                 else{
-                        largeImage.style.marginBottom = (document.body.offsetHeight - largeImage.offsetHeight)/2 + "px";
+                        largeImage.style.marginTop = (document.body.offsetHeight - largeImage.offsetHeight)/2 + "px";
                         console.log(largeImage.offsetHeight)
                 }
                 sleep(1).then(() => {large.style.zIndex = 1;})
