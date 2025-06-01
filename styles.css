@@ -1,0 +1,180 @@
+@font-face {
+        font-family: PM;
+        src: url('assets/Pm-Regular.ttf') format('ttf');
+}
+html{
+        overflow-y: overlay;
+        overflow-x: hidden;
+}
+.backgroundGradient::-webkit-scrollbar-thumb{
+        background-color: rgb(0, 0, 0);
+}
+
+.backing{
+        z-index: -1;
+        position: fixed;
+        top: -50vh;
+        right: -50vw;
+        background-size: 100%;
+        width: 200vw;
+        height: 200vh;
+        aspect-ratio: 23/27;
+        background: radial-gradient(#7fffd7, #8a2be2);
+        background-size: 4000% 4000%;
+        animation: gradientShift 30s infinite alternate-reverse;
+        -webkit-animation: gradientShift 30s infinite alternate-reverse;
+}
+.center{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 100px;
+        width: 600px;
+        padding: 30px;
+        background-color: #7fffd686;
+        display: flexbox;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+}
+h1{
+        margin-top: 0;
+        margin-bottom: 0;
+}
+p{
+        margin-top: 5px;
+}
+
+smol{
+        font-size: xx-small;
+        font-variant: small-caps;
+}
+marquee{
+        font-weight: 900;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vh;
+        z-index: 100;
+}
+.images{
+        margin: 8%;
+        margin-top: 150px;
+        width: 80%;
+        background-color:rgba(205, 134, 63, 0.74);
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+}
+.images .tile{
+        margin:3%;
+        display: inline-block;
+        width: 25%;
+        padding: 1%;
+        align-content: center;
+        border-radius: 15px;
+        text-align: center;
+}
+
+.images .tile .image{
+        border-radius: 15px;
+        width: 99%;
+        height: 100%;
+        aspect-ratio: 1/1;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display:inline-block;
+        object-fit:contain;
+        content: url(assets/discord.png);
+}
+.images .tile img{
+        border-radius: 150px;
+        white-space-collapse: nowrap;
+        text-decoration: none;
+        font-size: larger;
+        font-weight: 900;
+        -webkit-border-radius: 150px;
+        -moz-border-radius: 150px;
+        -ms-border-radius: 150px;
+        -o-border-radius: 150px;
+}
+
+.bottom{
+        position: fixed;
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        background-color:cornflowerblue;
+        bottom: 0;
+        left: 0;
+        height: 30vw;
+        width: 30vw;
+        padding: 20px;
+        border-top-right-radius: 50px;
+}
+
+.large{
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: -100;
+        position: fixed;
+        background-color:rgba(0, 0, 0, 0.659);
+        justify-self: center;
+        justify-content: center;
+        justify-items: center;
+}
+.large img{
+        margin-top: 2.5%;
+        height: 100%;
+        max-height: 90%;
+        white-space-collapse: nowrap;
+        text-decoration: none;
+        font-size: larger;
+        font-weight: 900;
+        z-index: 100;
+}
+
+@media only screen and (max-width: 700px){
+        .center{
+                width: 100%;
+        }
+        .images{
+                width: 100%;
+                margin: 2.5%;
+                margin-top: 150px;
+        }
+        .images .tile{
+                margin: 2.5%;
+                width: 90.5%;
+        }
+        .large{
+                top: 20%;
+                right: 5%;
+                position: fixed;
+                width: 90vw;
+                height: 90vh;
+                background-color:rgba(0, 255, 255, 0.877);
+        }
+        .large img{
+                position: absolute;
+                max-width: 50%;
+                display: block;
+        }
+}
+
+
+
+
+@keyframes gradientShift {
+        0%{background-position: 10% 10%;}
+        20%{background-position: 80% 30%;}
+        40%{background-position: 20% 50%;}
+        60%{background-position: 10% 70%;}
+        80%{background-position: 80% 90%;}
+        100%{background-position: 50% 50%;}
+}

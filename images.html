@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="backgroundGradient">
+        <head>
+                <title></title>
+                <link href="styles.css" rel="stylesheet" type="text/css" media="all">
+                <link rel="favicon" href="assets/icon.png">
+                <style>
+                        .center{
+                                margin-top: 50px;
+                        }
+
+                        .stargazing .image{content: image-set("assets/✨stargazing✨.JPG");}
+                        .us .image{content: image-set("assets/us❤️.JPG");}
+                        .why-are-you-so-far .image{content: image-set("assets/why-the-fuck-are-you-so-far-away.JPG");}
+                        .nothing-is-meaningless .image{content: image-set("assets/nothing-is-meaningless-with-you.png");}
+                        .sick-of-no-kissing .image{content: image-set("assets/sick-of-not-being-able-to-kiss-you.JPG");}
+                        .virtual-hug .image{content: image-set("assets/virtual-hug.GIF");}
+
+                                .images .tile{
+                                        margin: 2.5%;
+                                        width: 40.5%;
+                                }
+
+                </style>
+                <script src = "scripts.js"></script>
+
+        </head>
+
+        <body>
+                <div class="backing"></div>
+                <div class="large" id = "large" onclick="hide('large')">
+                        <img class = "image" id = "largeImage">
+
+                </div>
+                <div class = "images">
+                        <div class = 'tile stargazing'>
+                                <img class = 'image' onclick="setAndShow('stargazing')">
+                        </div>
+                        <div class = 'tile us'>
+                                <img class = 'image' onclick="setAndShow('us')">
+                        </div>
+                        <div class = 'tile why-are-you-so-far' >
+                                <img class = 'image' onclick="setAndShow('why-are-you-so-far')">
+                        </div>
+                        <div class = 'tile nothing-is-meaningless'>
+                                <img class = 'image' onclick="setAndShow('nothing-is-meaningless')">
+                        </div>
+                        <div class = 'tile sick-of-no-kissing'>
+                                <img class = 'image' onclick="setAndShow('sick-of-no-kissing')">
+                        </div>
+                        <div class = 'tile virtual-hug'>
+                                <img class = 'image' onclick="setAndShow('virtual-hug')">
+                        </div>
+                        <div class = 'tile discord'>
+                                <img class = 'image' onclick="setAndShow('us')">
+                        </div>
+        </body>
+</html>
