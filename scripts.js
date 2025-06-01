@@ -17,10 +17,14 @@ function setAndShow(image){
         }
         large.classList.add(image);
         sleep(50).then(() => {
-        largeImage.style.marginLeft = (document.body.offsetWidth - largeImage.offsetWidth)/2 + "px";
-        console.log(largeImage.offsetWidth)
-        sleep(1).then(() => {large.style.zIndex = 1;})
+                if (document.body.offsetWidth > 700){
+                        largeImage.style.marginLeft = (document.body.offsetWidth - largeImage.offsetWidth)/2 + "px";
+                        console.log(largeImage.offsetWidth)
+                }
+                else{
+                        largeImage.style.marginBottom = (document.body.offsetHeight - largeImage.offsetHeight)/2 + "px";
+                        console.log(largeImage.offsetHeight)
+                }
+                sleep(1).then(() => {large.style.zIndex = 1;})
         })
-        
-
 }

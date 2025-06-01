@@ -132,10 +132,6 @@ marquee{
         margin-top: 2.5%;
         height: 100%;
         max-height: 90%;
-        white-space-collapse: nowrap;
-        text-decoration: none;
-        font-size: larger;
-        font-weight: 900;
         z-index: 100;
 }
 
@@ -152,17 +148,11 @@ marquee{
                 margin: 2.5%;
                 width: 90.5%;
         }
-        .large{
-                top: 20%;
-                right: 5%;
-                position: fixed;
-                width: 90vw;
-                height: 90vh;
-                background-color:rgba(0, 255, 255, 0.877);
-        }
         .large img{
-                position: absolute;
-                max-width: 50%;
+                margin-left: 2.5%;
+                margin-right: 2.5%;
+                max-width: 90%;
+                max-height: unset;
                 display: block;
         }
 }
