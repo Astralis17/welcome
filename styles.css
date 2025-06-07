@@ -15,14 +15,22 @@ html{
         position: fixed;
         top: -50vh;
         right: -50vw;
-        background-size: 100%;
         width: 200vw;
         height: 200vh;
-        aspect-ratio: 23/27;
-        background: radial-gradient(#7fffd7, #8a2be2);
-        background-size: 4000% 4000%;
         animation: gradientShift 30s infinite alternate-reverse;
         -webkit-animation: gradientShift 30s infinite alternate-reverse;
+}
+.purple-cyan{
+        background: radial-gradient(#7fffd7, #8a2be2);
+        background-size: 400% 400%;
+}
+.red-orange{
+        background: radial-gradient(rgb(243, 89, 120), rgb(233, 179, 79));
+        background-size: 400% 400%;
+}
+.green-purple{
+        background: radial-gradient(green, #8a2be2);
+        background-size: 400% 400%;
 }
 .center{
         margin-left: auto;
@@ -105,9 +113,16 @@ marquee{
         display: inline-block;
         background-color:cornflowerblue;
         bottom: 0;
-        left: 0;
         padding: 20px;
+        max-width: 40vw;
+}
+.left{
+        left: 0;
         border-top-right-radius: 50px;
+}
+.right{
+        right: 0;
+        border-top-left-radius: 50px;
 }
 
 .large{
@@ -135,6 +150,7 @@ marquee{
                 margin-top: 100px;
                 padding: 5%;
                 width: 80%;
+                margin-bottom: 15%;
         }
         .images{
                 width: 95%;

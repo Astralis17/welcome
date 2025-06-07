@@ -25,6 +25,6 @@ function setAndShow(image){
                         largeImage.style.marginBottom = (document.body.offsetHeight - largeImage.offsetHeight)/4 + "px";
                         console.log(largeImage.offsetHeight)
                 }
-                sleep(1).then(() => {large.style.zIndex = 1;})
+                sleep(50).then(() => {large.style.zIndex = 100;})
         })
 }
